@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Discord Bot Message</title>
+    <link rel="icon" href="./favicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+  </head>
+  <body>
+    <header>
+      <h1>Discord Bot Message</h1>
+      <a href="https://www.youtube.com/@allaboutdiscord9557" target="_blank">
+        <button>Visit Our YouTube Channel</button>
+      </a>
+    </header>
+    <div class="container">
+      <p class="prompt">Send a message through your Discord bot by entering your Token, the Channel ID to which you want to send the message, and the message you want to send. Your information is 100% safe!</p>
+      <form method="post" onsubmit="submitSuccess(event)">
+        <label for="token">Token:</label>
+        <input type="text" id="token" name="token" required>
+
+        <label for="channel">Channel ID:</label>
+        <input type="number" id="channel" name="channel" required>
+
+        <label for="msg">Message:</label>
+        <textarea id="msg" name="msg" rows="5" required></textarea>
+
+        <input type="submit" value="Send Message">
+      </form>
+      <div id="success-message" class="success-message">
+      </div>
+    </div>
+    <footer>
+      <p>© All Bout Discord | <a href="https://www.youtube.com/@allaboutdiscord9557" target="_blank">YouTube Link</a></p>
+    </footer>
+  </body>
+</html>
